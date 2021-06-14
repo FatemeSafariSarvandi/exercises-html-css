@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./Style/styl.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+            integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+            crossorigin="anonymous"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="subBody">
+            <ul class="menu">
+                <li id="activeStandard" class="submenu">
+                    <i class="fas fa-bars submenu"></i>
+                </li>
+                <li class="submenu"><h3>Standard</h3></li>
+                <li class="submenu" id="I_history">
+                    <i class="fas fa-history"></i>
+                </li>
+            </ul>
+            <div class="key">
+                <div class="M_key">
+                    <div class="M_icon">MC</div>
+                    <div class="M_icon">MR</div>
+                    <div class="M_icon">M+</div>
+                    <div class="M_icon">M-</div>
+                    <div class="M_icon">MS</div>
+                    <div class="M_icon">M</div>
+                </div>
+                <div class="keyboard">
+                    <div id="upIcon">
+                        <div class="icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-square-root-alt"></i>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-superscript"></i>
+                        </div>
+                        <div class="icon x3">
+                            <i class="fas fa-superscript"></i>
+                        </div>
+                        <div class="icon number">1/x</div>
+                    </div>
+                    <div id="downIcon">
+                        <div class="icon number">CE</div>
+                        <div class="icon number">C</div>
+                        <div class="icon"><i class="fas fa-backspace"></i></div>
+
+                        <div class="icon"><i class="fas fa-divide"></i></div>
+                        <div class="icon number">7</div>
+                        <div class="icon number">8</div>
+                        <div class="icon number">9</div>
+                        <div class="icon"><i class="fas fa-times"></i></div>
+                        <div class="icon number">4</div>
+                        <div class="icon number">5</div>
+                        <div class="icon number">6</div>
+                        <div class="icon"><i class="fas fa-minus"></i></div>
+                        <div class="icon number">1</div>
+                        <div class="icon number">2</div>
+                        <div class="icon number">3</div>
+                        <div class="icon"><i class="fas fa-plus"></i></div>
+                        <div class="icon number">+/-</div>
+                        <div class="icon number">0</div>
+                        <div class="icon number">.</div>
+                        <div class="icon"><i class="fas fa-equals"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div id="standard">
+                <div id="deActiveStandard" class="styleStandardMenu">
+                    <i class="fas fa-bars submenu"></i> CALCULATOR
+                </div>
+                <div class="list">
+                    <div class="option">Standard</div>
+                    <div class="option">Scientific</div>
+                    <div class="option">Programmer</div>
+                    <div class="option">Date calculation</div>
+                    <div class="option">Converter</div>
+                    <div class="option">Volome</div>
+                    <div class="option">Length</div>
+                    <div class="option">Weight and Mass</div>
+                    <div class="option">Temperature</div>
+                    <div class="option">Energy</div>
+                    <div class="option">Standard</div>
+                    <div class="option">Scientific</div>
+                    <div class="option">Programmer</div>
+                    <div class="option">Date calculation</div>
+                    <div class="option">Converter</div>
+                    <div class="option">Volome</div>
+                    <div class="option">Length</div>
+                    <div class="option">Weight and Mass</div>
+                    <div class="option">Temperature</div>
+                    <div class="option">Energy</div>
+                    <div class="option">Standard</div>
+                    <div class="option">Scientific</div>
+                    <div class="option">Programmer</div>
+                    <div class="option">Date calculation</div>
+                    <div class="option">Converter</div>
+                    <div class="option">Volome</div>
+                    <div class="option">Length</div>
+                    <div class="option">Weight and Mass</div>
+                    <div class="option">Temperature</div>
+                    <div class="option">Energy</div>
+                    <div class="option">Standard</div>
+                    <div class="option">Scientific</div>
+                    <div class="option">Programmer</div>
+                    <div class="option">Date calculation</div>
+                    <div class="option">Converter</div>
+                    <div class="option">Volome</div>
+                    <div class="option">Length</div>
+                    <div class="option">Weight and Mass</div>
+                    <div class="option">Temperature</div>
+                    <div class="option">Energy</div>
+                </div>
+                <div class="styleStandardMenu">
+                    <i class="fas fa-cog"></i>Settings
+                </div>
+            </div>
+            <div id="historyPage">
+                <h5>There's no history yet</h5>
+            </div>
+        </div>
+        <div id="historyPart">
+            <ul class="menu">
+                <li class="submenu" id="history">History</li>
+                <li class="submenu" id="memory">Memory</li>
+            </ul>
+            <h5 id="T_history">There's no history yet</h5>
+            <h5 id="T_memory">There's nothing saved in memory</h5>
+        </div>
+        <script src="./Script/script.js"></script>
+    </body>
+</html>
