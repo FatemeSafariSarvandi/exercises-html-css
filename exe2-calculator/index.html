@@ -24,6 +24,10 @@
                     <i class="fas fa-history"></i>
                 </li>
             </ul>
+            <div>
+                <div id="show"></div>
+                <div id="result">0</div>
+            </div>
             <div class="key">
                 <div class="M_key">
                     <div class="M_icon">MC</div>
@@ -35,38 +39,52 @@
                 </div>
                 <div class="keyboard">
                     <div id="upIcon">
-                        <div class="icon">
+                        <div id="percentage" class="icon">
                             <i class="fas fa-percentage"></i>
                         </div>
-                        <div class="icon">
-                            <i class="fas fa-square-root-alt"></i>
+                        <div id="squareRoot" class="icon styleIcon">√</div>
+                        <div id="square" class="icon styleIcon">
+                            <b>x</b><sup>2</sup>
                         </div>
-                        <div class="icon number"><b>x</b><sup>2</sup></div>
-                        <div class="icon x3"><b>x</b><sup>3</sup></div>
-                        <div class="icon number">1/x</div>
+                        <div id="cube" class="icon x3">
+                            <b>x</b><sup>3</sup>
+                        </div>
+                        <div id="reverse" class="icon styleIcon">1/x</div>
                     </div>
                     <div id="downIcon">
-                        <div class="icon number">CE</div>
-                        <div class="icon number">C</div>
-                        <div class="icon"><i class="fas fa-backspace"></i></div>
+                        <div id="CE" class="icon styleIcon">CE</div>
+                        <div id="C" class="icon styleIcon">C</div>
+                        <div id="backspace" class="icon">
+                            <i class="fas fa-backspace"></i>
+                        </div>
 
-                        <div class="icon"><i class="fas fa-divide"></i></div>
-                        <div class="icon number">7</div>
-                        <div class="icon number">8</div>
-                        <div class="icon number">9</div>
-                        <div class="icon"><i class="fas fa-times"></i></div>
-                        <div class="icon number">4</div>
-                        <div class="icon number">5</div>
-                        <div class="icon number">6</div>
-                        <div class="icon"><i class="fas fa-minus"></i></div>
-                        <div class="icon number">1</div>
-                        <div class="icon number">2</div>
-                        <div class="icon number">3</div>
-                        <div class="icon"><i class="fas fa-plus"></i></div>
-                        <div class="icon number">+/-</div>
-                        <div class="icon number">0</div>
-                        <div class="icon number">.</div>
-                        <div class="icon"><i class="fas fa-equals"></i></div>
+                        <div id="divide" class="icon">
+                            <i class="fas fa-divide"></i>
+                        </div>
+                        <div class="icon styleIcon number">7</div>
+                        <div class="icon styleIcon number">8</div>
+                        <div class="icon styleIcon number">9</div>
+                        <div id="mul" class="icon">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="icon styleIcon number">4</div>
+                        <div class="icon styleIcon number">5</div>
+                        <div class="icon styleIcon number">6</div>
+                        <div id="minus" class="icon">
+                            <i class="fas fa-minus"></i>
+                        </div>
+                        <div class="icon styleIcon number">1</div>
+                        <div class="icon styleIcon number">2</div>
+                        <div class="icon styleIcon number">3</div>
+                        <div id="plus" class="icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div id="changeSign" class="icon styleIcon">+/-</div>
+                        <div class="icon styleIcon number">0</div>
+                        <div id="dot" class="icon styleIcon">.</div>
+                        <div id="equals" class="icon">
+                            <i class="fas fa-equals"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,7 +139,8 @@
                 </div>
             </div>
             <div id="historyPage">
-                <h5>There's no history yet</h5>
+                <div id="downHistory">There's no history yet</div>
+                <div class="trash"><i class="far fa-trash-alt"></i></div>
             </div>
         </div>
         <div id="historyPart">
@@ -129,9 +148,13 @@
                 <li class="submenu" id="history">History</li>
                 <li class="submenu" id="memory">Memory</li>
             </ul>
-            <h5 id="T_history">There's no history yet</h5>
+            <h5 id="T_history">
+                <div id="history1">There's no history yet</div>
+                <div class="trash"><i class="far fa-trash-alt"></i></div>
+            </h5>
             <h5 id="T_memory">There's nothing saved in memory</h5>
         </div>
         <script src="./Script/script.js"></script>
+        <script src="./Script/performance.js"></script>
     </body>
 </html>
