@@ -147,9 +147,12 @@ body {
     padding: 0.2rem;
 }
 
-#historyPart,
 .x3,
 #T_memory {
+    display: none;
+}
+#historyPart {
+    overflow-y: scroll;
     display: none;
 }
 #show {
