@@ -26,17 +26,22 @@ let flag_num = 0;
 let flag_dot = false;
 let flag_One = false;
 let flag_tow = false;
+let flag_num2 = false;
 let showElement;
 let arrOfUserInput = [];
 for (let i = 0; i < number.length; i++) {
     number[i].onclick = () => {
         arrOfUserInput.push(number[i].innerHTML);
+        if (!flag_num2) {
+            show.innerHTML = '';
+        }
         if (flag_num === 0) {
             result.innerHTML = number[i].innerHTML;
         } else {
             result.innerHTML += number[i].innerHTML;
         }
         flag_num++;
+        flag_num2 = true;
     };
 }
 
@@ -387,7 +392,6 @@ equal.onclick = () => {
         history1.style.textAlign = 'right';
         downHistory.style.textAlign = 'right';
         history1.innerHTML += show.innerHTML + '=';
-        show.innerHTML = '';
         result.innerHTML = arrOfUserInput[0];
         history1.innerHTML += '<h1>' + result.innerHTML + '<h1>' + '</br>';
         downHistory.innerHTML = history1.innerHTML;
@@ -397,6 +401,7 @@ equal.onclick = () => {
         flag_equal = true;
         flag_One = false;
         flag_tow = false;
+        flag_num2 = false;
     } else if (flag_tow) {
         let firstSign = findFirstSign(arrOfUserInput);
         compute(firstSign, '=');
@@ -410,7 +415,7 @@ equal.onclick = () => {
         result.innerHTML = arrOfUserInput[0];
         history1.innerHTML += '<h1>' + result.innerHTML + '<h1>' + '</br>';
         downHistory.innerHTML = history1.innerHTML;
-        show.innerHTML = '';
+
         arrOfUserInput = [];
         flag_num = 0;
         flag = 0;
@@ -418,6 +423,7 @@ equal.onclick = () => {
         flag_equal = true;
         flag_One = false;
         flag_tow = false;
+        flag_num2 = false;
     } else if (flag > 0) {
         let firstSign = findFirstSign(arrOfUserInput);
         compute(firstSign, '=');
@@ -428,10 +434,10 @@ equal.onclick = () => {
         history1.style.textAlign = 'right';
         downHistory.style.textAlign = 'right';
         history1.innerHTML += show.innerHTML + result.innerHTML + '=';
+        show.innerHTML += result.innerHTML;
         result.innerHTML = arrOfUserInput[0];
         history1.innerHTML += '<h1>' + result.innerHTML + '<h1>' + '</br>';
         downHistory.innerHTML = history1.innerHTML;
-        show.innerHTML = '';
         arrOfUserInput = [];
         flag_num = 0;
         flag = 0;
@@ -439,6 +445,7 @@ equal.onclick = () => {
         flag_equal = true;
         flag_One = false;
         flag_tow = false;
+        flag_num2 = false;
     }
 };
 

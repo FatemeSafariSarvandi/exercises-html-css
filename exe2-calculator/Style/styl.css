@@ -38,7 +38,7 @@ body {
     margin-left: auto;
 }
 .key {
-    height: 50%;
+    height: 70%;
 }
 .M_key {
     display: flex;
@@ -159,7 +159,7 @@ body {
 }
 #result {
     text-align: right;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     padding: 0.2rem;
 }
 
@@ -207,7 +207,7 @@ body {
     }
     #historyPart {
         display: block;
-        width: 40%;
+        width: 30%;
         border-left: 1px solid #394755;
         padding: 0.2rem;
     }
@@ -222,5 +222,8 @@ body {
     }
     .styleIcon {
         font-weight: bolder;
+    }
+    #standard {
+        width: 20%;
     }
 }
