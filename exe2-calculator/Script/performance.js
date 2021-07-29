@@ -179,6 +179,7 @@ C.onclick = () => {
     flag_dot = false;
     flag_One = false;
     flag_tow = false;
+    flag_num2 = false;
     show.innerHTML = '';
     result.innerHTML = '0';
 };
